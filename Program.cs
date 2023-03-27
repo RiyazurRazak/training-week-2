@@ -7,8 +7,12 @@ namespace week_2
       
         static void Main(string[] args)
         {
-            SpiralMatrix runner = new SpiralMatrix();
+            StockPrice runner = new StockPrice();
             runner.Run();
+
+
+            //SpiralMatrix runner = new SpiralMatrix();
+            //runner.Run();
 
             //DirectoryInfo dirInfo = new DirectoryInfo("C:\\Users\\Hp\\Documents\\prograd\\cs\\testing");
             //dirInfo.Create();
