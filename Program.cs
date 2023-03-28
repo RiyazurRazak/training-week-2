@@ -7,8 +7,16 @@ namespace week_2
         delegate int DelegateFn(int x, int y);
         static void Main(string[] args)
         {
-         
 
+        
+            var normalizer = (int num) => num * 10;
+            //var sum = (int num 1, num 2) => num1 + num2;
+            var sum = (int num1, int num2) => {
+                int sumation = normalizer(num1) + normalizer(num2);
+               return sumation;
+            };
+            Console.WriteLine(sum(5,5));
+            
 
             //DelegateFn maskFn = new DelegateFn(delegate (int a, int b) { return a + b; });
             //Console.WriteLine(maskFn(5, 6));
