@@ -4,20 +4,28 @@ namespace week_2
 {
     internal class Program  // : AccessSpecifiers
     {
-      
+        delegate int DelegateFn(int x, int y);
         static void Main(string[] args)
         {
+         
 
-            Delegates obj = new Delegates();
-            DelegateSum maskFn = obj.Sum;
-            maskFn += obj.Difference; // multicastDelegate
-            //maskFn(5, 10);
-            //maskFn.Invoke(5, 6);
-            foreach (DelegateSum mask in maskFn.GetInvocationList())
-            {
-                int x = mask.Invoke(5, 6);
-                Console.WriteLine(x);   
-            }
+
+            //DelegateFn maskFn = new DelegateFn(delegate (int a, int b) { return a + b; });
+            //Console.WriteLine(maskFn(5, 6));
+            //var Print = delegate(string message) { Console.WriteLine(message); };
+            //Print("hai from anonymous fn");
+
+
+            //Delegates obj = new Delegates();
+            //DelegateSum maskFn = obj.Sum;
+            //maskFn += obj.Difference; // multicastDelegate
+            ////maskFn(5, 10);
+            ////maskFn.Invoke(5, 6);
+            //foreach (DelegateSum mask in maskFn.GetInvocationList())
+            //{
+            //    int x = mask.Invoke(5, 6);
+            //    Console.WriteLine(x);   
+            //}
 
             //StockPrice runner = new StockPrice();
             //runner.Run();
