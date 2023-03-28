@@ -8,15 +8,19 @@ namespace week_2
         static void Main(string[] args)
         {
 
-        
-            var normalizer = (int num) => num * 10;
-            //var sum = (int num 1, num 2) => num1 + num2;
-            var sum = (int num1, int num2) => {
-                int sumation = normalizer(num1) + normalizer(num2);
-               return sumation;
-            };
-            Console.WriteLine(sum(5,5));
+            List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 };
+            List<int> divisibleBy5 = numbers.FindAll((num) => num % 5 == 0);
+            divisibleBy5.ForEach((num) => { Console.WriteLine(num); });
             
+
+            //var normalizer = (int num) => num * 10;
+            ////var sum = (int num 1, num 2) => num1 + num2;
+            //var sum = (int num1, int num2) => {
+            //    int sumation = normalizer(num1) + normalizer(num2);
+            //   return sumation;
+            //};
+            //Console.WriteLine(sum(5,5));
+
 
             //DelegateFn maskFn = new DelegateFn(delegate (int a, int b) { return a + b; });
             //Console.WriteLine(maskFn(5, 6));
@@ -45,7 +49,7 @@ namespace week_2
             //DirectoryInfo dirInfo = new DirectoryInfo("C:\\Users\\Hp\\Documents\\prograd\\cs\\testing");
             //dirInfo.Create();
             //dirInfo.Delete();
-          
+
             //FileInfo file = new FileInfo("C:\\Users\\Hp\\Documents\\prograd\\cs\\demo.txt");
             //file.Create();
 
