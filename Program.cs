@@ -7,11 +7,39 @@ namespace week_2
         delegate int DelegateFn(int x, int y);
         static void Main(string[] args)
         {
+            List<Lambda> students = new List<Lambda>();
+            students.Add(new Lambda()
+            {
+                name = "Riyaz",
+                rollNo = 1,
+            });
+            students.Add(new Lambda()
+            {
+                name = "Sanjai",
+                rollNo = 3,
+            });
+            students.Add(new Lambda()
+            {
+                name = "Nantha",
+                rollNo = 2,
+            });
 
-            List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 };
-            List<int> divisibleBy5 = numbers.FindAll((num) => num % 5 == 0);
-            divisibleBy5.ForEach((num) => { Console.WriteLine(num); });
-            
+            students.ForEach(student =>
+            {
+                Console.WriteLine($"Name: {student.name}, Id: {student.rollNo}");
+            });
+
+            List<Lambda> newList = students.OrderBy(student => student.rollNo).ToList();
+            newList.ForEach(student =>
+            {
+                Console.WriteLine($"Name: {student.name}, Id: {student.rollNo}");
+            });
+
+
+            //List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 };
+            //List<int> divisibleBy5 = numbers.FindAll((num) => num % 5 == 0);
+            //divisibleBy5.ForEach((num) => { Console.WriteLine(num); });
+
 
             //var normalizer = (int num) => num * 10;
             ////var sum = (int num 1, num 2) => num1 + num2;
