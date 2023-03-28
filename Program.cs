@@ -11,6 +11,9 @@ namespace week_2
         static void Main(string[] args)
         {
 
+          
+            //RotateMatrix runner = new RotateMatrix();
+            //runner.Run();
 
             //int[] numbers = { 1, 2, 3, 4, 5, 6, };
             //int count = numbers.Count((number) => number % 2 == 0);
