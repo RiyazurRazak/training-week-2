@@ -7,8 +7,20 @@ namespace week_2
       
         static void Main(string[] args)
         {
-            StockPrice runner = new StockPrice();
-            runner.Run();
+
+            Delegates obj = new Delegates();
+            DelegateSum maskFn = obj.Sum;
+            maskFn += obj.Difference; // multicastDelegate
+            //maskFn(5, 10);
+            //maskFn.Invoke(5, 6);
+            foreach (DelegateSum mask in maskFn.GetInvocationList())
+            {
+                int x = mask.Invoke(5, 6);
+                Console.WriteLine(x);   
+            }
+
+            //StockPrice runner = new StockPrice();
+            //runner.Run();
 
 
             //SpiralMatrix runner = new SpiralMatrix();
