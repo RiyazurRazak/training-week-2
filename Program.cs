@@ -5,35 +5,79 @@ namespace week_2
     internal class Program  // : AccessSpecifiers
     {
         delegate int DelegateFn(int x, int y);
+
+       
+        
         static void Main(string[] args)
         {
-            List<Lambda> students = new List<Lambda>();
-            students.Add(new Lambda()
-            {
-                name = "Riyaz",
-                rollNo = 1,
-            });
-            students.Add(new Lambda()
-            {
-                name = "Sanjai",
-                rollNo = 3,
-            });
-            students.Add(new Lambda()
-            {
-                name = "Nantha",
-                rollNo = 2,
-            });
 
-            students.ForEach(student =>
-            {
-                Console.WriteLine($"Name: {student.name}, Id: {student.rollNo}");
-            });
 
-            List<Lambda> newList = students.OrderBy(student => student.rollNo).ToList();
-            newList.ForEach(student =>
-            {
-                Console.WriteLine($"Name: {student.name}, Id: {student.rollNo}");
-            });
+            //int[] numbers = { 1, 2, 3, 4, 5, 6, };
+            //int count = numbers.Count((number) => number % 2 == 0);
+            //Console.WriteLine(count);
+
+
+            //Func<int, int, int> Fn = (a,b) => a+b;
+            //Console.WriteLine(Fn(5, 5));
+
+
+            //Lambda testObj = new();
+            //var worker = (int number) =>  number % 2 == 0;
+            //int count = testObj.Count(worker);
+            //Console.WriteLine(count);
+
+            //int result = testObj.TestMethod(5, 5);
+            //Console.WriteLine(result);
+
+
+            ////statement lambda 
+            //var result = (int x, int y) =>
+            //{
+            //    int total = 0;
+            //    total = x + y;
+            //    return total;
+            //};
+
+
+
+
+            //List<Lambda> students = new List<Lambda>();
+            //students.Add(new Lambda()
+            //{
+            //    name = "Riyaz",
+            //    rollNo = 1,
+            //});
+            //students.Add(new Lambda()
+            //{
+            //    name = "Sanjai",
+            //    rollNo = 3,
+            //});
+            //students.Add(new Lambda()
+            //{
+            //    name = "Nantha",
+            //    rollNo = 2,
+            //});
+
+            //students.ForEach(student =>
+            //{
+            //    Console.WriteLine($"Name: {student.name}, Id: {student.rollNo}");
+            //});
+
+            //List<Lambda> newList = students.OrderBy(student => student.rollNo).ToList();
+            //newList.ForEach(student =>
+            //{
+            //    Console.WriteLine($"Name: {student.name}, Id: {student.rollNo}");
+            //});
+
+            //students.Sort((s1, s2) => s1.name.CompareTo(s2.name));
+            //students.ForEach(student =>
+            //{
+            //    Console.WriteLine($"Name: {student.name}, Id: {student.rollNo}");
+            //});
+            //students.Sort((s1, s2) => s1.rollNo - s2.rollNo);
+
+
+
 
 
             //List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 };
