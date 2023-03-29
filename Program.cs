@@ -5,13 +5,20 @@ namespace week_2
     internal class Program  // : AccessSpecifiers
     {
         delegate int DelegateFn(int x, int y);
-
-       
-        
-        static void main(string[] args)
+        static void Main(string[] args)
         {
 
+            AsyncProgramming runner = new();
 
+            // block the async 
+
+            //Task.WaitAll(runner.Print());
+
+            // noblocking the async
+            runner.Print();
+
+            runner.Sum();
+            Console.ReadLine();
 
           
             //RotateMatrix runner = new RotateMatrix();
