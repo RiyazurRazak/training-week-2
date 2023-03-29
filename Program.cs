@@ -8,8 +8,10 @@ namespace week_2
 
        
         
-        static void Main(string[] args)
+        static void main(string[] args)
         {
+
+
 
           
             //RotateMatrix runner = new RotateMatrix();
