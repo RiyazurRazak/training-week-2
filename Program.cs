@@ -4,21 +4,20 @@ namespace week_2
 {
     internal class Program  // : AccessSpecifiers
     {
-        delegate int DelegateFn(int x, int y);
+        //delegate int DelegateFn(int x, int y);
         static void Main(string[] args)
         {
 
-            AsyncProgramming runner = new();
+            //AsyncProgramming runner = new();
 
-            // block the async 
+            //// block the async 
 
-            //Task.WaitAll(runner.Print());
+            ////Task.WaitAll(runner.Print());
 
-            // noblocking the async
-            runner.Print();
-
-            runner.Sum();
-            Console.ReadLine();
+            //// noblocking the async
+            //runner.Print();
+            //runner.Sum();
+            //Console.ReadLine();
 
           
             //RotateMatrix runner = new RotateMatrix();
