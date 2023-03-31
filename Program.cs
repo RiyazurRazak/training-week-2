@@ -8,6 +8,24 @@ namespace week_2
         static void Main(string[] args)
         {
 
+
+            SalaryCalculator calculator = new SalaryCalculator();
+            double[] data = { 13.25, 15, 30, 1.5 };
+            Console.WriteLine(calculator.GetTotalPayForADay(data));
+
+            //EventOrganizer occasion = new EventOrganizer();
+            //occasion.StageDecoration();
+            //occasion.SecurityCheckup();
+            //Task.WaitAny(occasion.DropRawMaterialToTheVenue());
+            //occasion.PrepareFood();
+            //occasion.PickUpChiefGuest();
+            //occasion.CheckSpeech();
+            //Task.WaitAny(occasion.GetPricesToTheVenue());
+            //Task.WaitAny(occasion.GuestSpeech());
+            //Task.WaitAny(occasion.PriceDistibution());
+            //occasion.FoodDistibution();
+
+
             //AsyncProgramming runner = new();
 
             //// block the async 
