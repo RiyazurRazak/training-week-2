@@ -23,7 +23,6 @@ namespace week_2
                 salary += overTimeWorked * (overtimeBonous * salaryPerHour);
             }
 
-            Console.WriteLine(startTime + " " +endTime);
             double totalHoursWorked = endTime - startTime;
             salary += totalHoursWorked * salaryPerHour;
             return salary;
